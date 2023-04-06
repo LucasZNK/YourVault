@@ -52,7 +52,7 @@ zeroize(): This is a function from the zeroize library that is used to clear the
 
 Additionally, you can see a special compilation directive #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")] that indicates that the program should compile in release mode for Windows, which means that there will be no command console associated with the application.
 
-# Warnings
+# Warnings [ READ PLEASE ]
 
 The following are some important warnings that you should be aware of before modifying or using this code:
 
