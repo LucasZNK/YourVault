@@ -54,11 +54,11 @@ Modify at your own risk: This code generates a private key and a mnemonic phrase
 
 ## You are responsable for your funds
 
-- Never reveal your login credentials.
-- Never share your private key or mnemonic phrase. Nobody should ever ask you for this information, and if they do, it's likely a scam.
-- Be cautious if someone gains access to your computer. While our app takes measures to clean up memory, it's not possible to keep anything - Secure on a compromised computer.
-- Before sending a large amount of money, make sure to do some testing. Generate your key, delete everything, and then try entering the same information again to ensure that it generates the same key every time.
-- Don't lose your access credentials. If you forget your login credentials and don't have your private key backed up, there is no way to recover your funds. Be sure to keep your login information safe and secure.
+- **Never reveal your login credentials.**
+- **Never share your private key or mnemonic phrase. Nobody should ever ask you for this information, and if they do, it's likely a scam.**
+- **Be cautious if someone gains access to your computer. While our app takes measures to clean up memory, it's not possible to keep anything - Secure on a compromised computer.**
+- **Before sending a large amount of money, make sure to do some testing. Generate your key, delete everything, and then try entering the same information again to ensure that it generates the same key every time.**
+- **Don't lose your access credentials. If you forget your login credentials and don't have your private key backed up, there is no way to recover your funds. Be sure to keep your login information safe and secure.**
 
 ## Getting Started
 
