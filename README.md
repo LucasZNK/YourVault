@@ -26,6 +26,11 @@ npm install
 
 Finally, start the development server:
 
+Install in your machine (review the code first to be safe)
+` npm run tauri build`
+
+For dev
+
 ```
 npm tauri dev
 ```
