@@ -2,6 +2,8 @@
 
 This is a web application built with React that allows users to generate a private key and a mnemonic phrase, based on a username, password, and a PIN. The app also includes a keyboard for users to input their PIN, and a feature to copy the generated key and mnemonic to the clipboard.
 
+`UI IN PROGRESS `
+
 ## Getting Started
 
 To run this application locally, first, clone this repository:

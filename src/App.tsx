@@ -165,6 +165,45 @@ function App() {
                 <button>Generate</button>
               </div>
             </form>
+            <div className="output">
+              <div className="output-row">
+                <label htmlFor="private-key">Private Key:</label>
+                <input
+                  id="private-key"
+                  value={
+                    showPrivateKey
+                      ? output.privateKey
+                      : "•".repeat(output.privateKey.length)
+                  }
+                  readOnly
+                />
+                <button onClick={() => setShowPrivateKey(!showPrivateKey)}>
+                  {showPrivateKey ? "Hide" : "Show"}
+                </button>
+                <button onClick={() => copyToClipboard(output.privateKey)}>
+                  Copy
+                </button>
+              </div>
+              <div className="output-row">
+                <label htmlFor="mnemonic">Mnemonic Phrase:</label>
+                <input
+                  id="mnemonic"
+                  value={
+                    showMnemonic
+                      ? output.mnemonic
+                      : "•".repeat(output.mnemonic.length)
+                  }
+                  readOnly
+                />
+                <button onClick={() => setShowMnemonic(!showMnemonic)}>
+                  {showMnemonic ? "Hide" : "Show"}
+                </button>
+                <button onClick={() => copyToClipboard(output.mnemonic)}>
+                  Copy
+                </button>
+              </div>
+              <button onClick={cleanFields}>Clean</button>
+            </div>
           </div>
         </div>
       </div>
