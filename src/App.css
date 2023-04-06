@@ -1,0 +1,18 @@
+.welcome-text {
+  display: inline;
+  color: black;
+  background-clip: text;
+  mix-blend-mode: screen;
+}
+
+.title {
+  background-image: linear-gradient(to right, #1b9cfc, #55efc4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.form-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
