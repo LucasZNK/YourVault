@@ -6,9 +6,9 @@ This is a web application built with With Tauri, React + Rust that allows users 
 
 https://user-images.githubusercontent.com/57494138/230270090-cbacc063-6dc3-43af-9270-cd98abca5922.mov
 
-## Protecting Your Funds: Why We Choose Not to Distribute Complicated Executables
+## Protecting Your Funds: Why We Choose Not to Distribute Complicated Executables for Our Desktop App
 
-I choose not to distribute a complicated executable because I wouldn't use it myself. Moreover, by distributing such an executable, we run the risk of a malicious version being circulated, which could harm your funds. Instead, I firmly believe that the best approach is to download the code, review it to ensure that there is nothing suspicious, compile it, and install it on your computer to ensure safety.
+We choose not to distribute a complicated executable for our desktop app because our goal is for you to have control and full transparency over the software installed on your computer, especially when it comes to handling your funds. The idea is for you to build and install the app on your computer like any other program, but with the added benefit of being able to review the code beforehand and build it yourself. This process allows you to ensure that there is nothing suspicious or malicious in the code, providing an extra layer of security for your funds.
 
 ## Getting Started
 
