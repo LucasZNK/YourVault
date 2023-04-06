@@ -8,10 +8,6 @@ This is a web application built with With Tauri, React + Rust that allows users 
 
 To run this application locally, first, clone this repository:
 
-bash
-Copy code
-`https://github.com/LucasZNK/YourVault`
-
 Then, navigate to the project's directory and install the dependencies:
 
 ```
