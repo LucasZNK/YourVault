@@ -4,6 +4,8 @@ This is a web application built with With Tauri, React + Rust that allows users 
 
 `UI IN PROGRESS `
 
+https://user-images.githubusercontent.com/57494138/230270090-cbacc063-6dc3-43af-9270-cd98abca5922.mov
+
 ## Getting Started
 
 To run this application locally, first, clone this repository:
