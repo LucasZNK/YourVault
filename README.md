@@ -6,11 +6,17 @@ This is a web application built with With Tauri, React + Rust that allows users 
 
 https://user-images.githubusercontent.com/57494138/230270090-cbacc063-6dc3-43af-9270-cd98abca5922.mov
 
-## Protecting Your Funds: Why We Choose Not to Distribute Complicated Executables for Our Desktop App
+# Motivation:
 
-We choose not to distribute a executable for our desktop app because our goal is for you to have control and full transparency over the software installed on your computer, especially when it comes to handling your funds. The idea is for you to build and install the app on your computer like any other program, but with the added benefit of being able to review the code beforehand and build it yourself. This process allows you to ensure that there is nothing suspicious or malicious in the code, providing an extra layer of security for your funds.
+The goal of creating this application is to allow users to generate deterministic private keys and mnemonic phrases using a combination of their username, password, and a PIN. This offers a secure and easy-to-remember way to store and access their private keys across different blockchain networks such as Ethereum, Matic, Binance Smart Chain, and others, without the need to physically or digitally store them.
 
-Furthermore, it's important to note that our desktop app does not require an internet connection to function properly. This means that you can use it offline without any issues. We believe that by providing a completely offline solution, we can offer a higher level of security for your funds, as there is no risk of your private information or keys being transmitted over the internet. This is just one more way in which our app is designed to prioritize your security and peace of mind.
+Being deterministic, the process of generating private keys and mnemonic phrases will always produce the same output, as long as the same input values are used. This allows users to consistently access their funds, without needing to remember a complex private key or store a private key in an insecure location.
+
+With this application, users can easily and securely access their funds, knowing that they will always have access to their private keys and mnemonic phrases, as long as they remember their username, password, and PIN.
+
+It's important to note that this application is not a wallet itself, but rather a tool to generate private keys. For example, if you generate your private key using this application based on the data you entered and then go on a trip, you can download the application again and enter the same data to generate the same private key to import and use wherever you need it.
+
+However, it's crucial to keep in mind that anyone who obtains your username, password, and PIN will also have access to the same private key. Therefore, it's recommended to be careful with this information and keep it secure at all times. This application only generates private keys and does not store them, so it's the responsibility of the user to keep their information safe.
 
 ## How to use the app
 
@@ -27,18 +33,6 @@ Pin: 1234
 
 This combination will create a unique key that you only need to remember.
 
-# Motivation:
-
-The goal of creating this application is to allow users to generate deterministic private keys and mnemonic phrases using a combination of their username, password, and a PIN. This offers a secure and easy-to-remember way to store and access their private keys across different blockchain networks such as Ethereum, Matic, Binance Smart Chain, and others, without the need to physically or digitally store them.
-
-Being deterministic, the process of generating private keys and mnemonic phrases will always produce the same output, as long as the same input values are used. This allows users to consistently access their funds, without needing to remember a complex private key or store a private key in an insecure location.
-
-With this application, users can easily and securely access their funds, knowing that they will always have access to their private keys and mnemonic phrases, as long as they remember their username, password, and PIN.
-
-It's important to note that this application is not a wallet itself, but rather a tool to generate private keys. For example, if you generate your private key using this application based on the data you entered and then go on a trip, you can download the application again and enter the same data to generate the same private key to import and use wherever you need it.
-
-However, it's crucial to keep in mind that anyone who obtains your username, password, and PIN will also have access to the same private key. Therefore, it's recommended to be careful with this information and keep it secure at all times. This application only generates private keys and does not store them, so it's the responsibility of the user to keep their information safe.
-
 # How this create secure keys?
 
 This is a small Rust program that uses some third-party packages to generate a private key and its corresponding mnemonic phrase from a given input. The following functions and algorithms are used:
@@ -52,6 +46,12 @@ generate_values(username: String, password: String, pin: String) -> (String, Str
 zeroize(): This is a function from the zeroize library that is used to clear the memory of the input variable that contains the original input after it has been used to generate the private key. This is important to prevent leakage of confidential information in the computer's memory.
 
 Additionally, you can see a special compilation directive #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")] that indicates that the program should compile in release mode for Windows, which means that there will be no command console associated with the application.
+
+## Protecting Your Funds: Why We Choose Not to Distribute Complicated Executables for Our Desktop App
+
+We choose not to distribute a executable for our desktop app because our goal is for you to have control and full transparency over the software installed on your computer, especially when it comes to handling your funds. The idea is for you to build and install the app on your computer like any other program, but with the added benefit of being able to review the code beforehand and build it yourself. This process allows you to ensure that there is nothing suspicious or malicious in the code, providing an extra layer of security for your funds.
+
+Furthermore, it's important to note that our desktop app does not require an internet connection to function properly. This means that you can use it offline without any issues. We believe that by providing a completely offline solution, we can offer a higher level of security for your funds, as there is no risk of your private information or keys being transmitted over the internet. This is just one more way in which our app is designed to prioritize your security and peace of mind.
 
 # Warnings [ READ PLEASE ]
 
