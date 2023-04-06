@@ -30,10 +30,17 @@ npm tauri dev
 
 [README IN PROGRESS, NEED TO ADD MORE STEPS]
 
-`Upon running the application, users can input their username, password, and PIN, and click the "Generate" button to get their private key and mnemonic phrase. Users can also click the "Copy" button to copy each generated value to the clipboard.`
+Motivation:
 
-`The app also includes a keyboard for users to input their PIN, which shuffles its keys randomly every time a number is pressed.`
-`To clear all fields, click the "Clear" button.`
+The goal of creating this application is to allow users to generate deterministic private keys and mnemonic phrases using a combination of their username, password, and a PIN. This offers a secure and easy-to-remember way to store and access their private keys across different blockchain networks such as Ethereum, Matic, Binance Smart Chain, and others, without the need to physically or digitally store them.
+
+Being deterministic, the process of generating private keys and mnemonic phrases will always produce the same output, as long as the same input values are used. This allows users to consistently access their funds, without needing to remember a complex private key or store a private key in an insecure location.
+
+With this application, users can easily and securely access their funds, knowing that they will always have access to their private keys and mnemonic phrases, as long as they remember their username, password, and PIN.
+
+It's important to note that this application is not a wallet itself, but rather a tool to generate private keys. For example, if you generate your private key using this application based on the data you entered and then go on a trip, you can download the application again and enter the same data to generate the same private key to import and use wherever you need it.
+
+However, it's crucial to keep in mind that anyone who obtains your username, password, and PIN will also have access to the same private key. Therefore, it's recommended to be careful with this information and keep it secure at all times. This application only generates private keys and does not store them, so it's the responsibility of the user to keep their information safe.
 
 # Warnings
 
