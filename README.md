@@ -27,37 +27,6 @@ Pin: 1234
 
 This combination will create a unique key that you only need to remember.
 
-## Getting Started
-
-To run this application locally, first, clone this repository:
-
-Then, navigate to the project's directory and install the dependencies: You are going to need some extra tools for rust.
-
-Complete pre-requisites from tauri
-
-`https://tauri.app/v1/guides/getting-started/prerequisites`
-
-```
-cd yourvault
-```
-
-```
-npm install
-```
-
-Finally, start the development server:
-
-Install in your machine (review the code first to be safe)
-` npm run tauri build`
-
-For dev
-
-```
-npm tauri dev
-```
-
-[README IN PROGRESS, NEED TO ADD MORE STEPS]
-
 # Motivation:
 
 The goal of creating this application is to allow users to generate deterministic private keys and mnemonic phrases using a combination of their username, password, and a PIN. This offers a secure and easy-to-remember way to store and access their private keys across different blockchain networks such as Ethereum, Matic, Binance Smart Chain, and others, without the need to physically or digitally store them.
@@ -95,6 +64,37 @@ Before sending a large amount of money, make sure to do some testing. Generate y
 Don't lose your access credentials. If you forget your login credentials and don't have your private key backed up, there is no way to recover your funds. Be sure to keep your login information safe and secure.
 
 Modify at your own risk: This code generates a private key and a mnemonic phrase based on a username, password, and a PIN. Modifying any part of this code may affect the generation process, and result in loss of access to your funds. It is recommended that you do not modify this code unless you fully understand its implications.
+
+## Getting Started
+
+To run this application locally, first, clone this repository:
+
+Then, navigate to the project's directory and install the dependencies: You are going to need some extra tools for rust.
+
+Complete pre-requisites from tauri
+
+`https://tauri.app/v1/guides/getting-started/prerequisites`
+
+```
+cd yourvault
+```
+
+```
+npm install
+```
+
+Finally, start the development server:
+
+Install in your machine (review the code first to be safe)
+` npm run tauri build`
+
+For dev
+
+```
+npm tauri dev
+```
+
+[README IN PROGRESS, NEED TO ADD MORE STEPS]
 
 License
 This project is licensed under the MIT license. See LICENSE for more information.
