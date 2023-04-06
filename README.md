@@ -38,6 +38,20 @@ It's important to note that this application is not a wallet itself, but rather 
 
 However, it's crucial to keep in mind that anyone who obtains your username, password, and PIN will also have access to the same private key. Therefore, it's recommended to be careful with this information and keep it secure at all times. This application only generates private keys and does not store them, so it's the responsibility of the user to keep their information safe.
 
+# How this create secure keys?
+
+This is a small Rust program that uses some third-party packages to generate a private key and its corresponding mnemonic phrase from a given input. The following functions and algorithms are used:
+
+generate_private_key_from_input(input: &str) -> H256: This function takes an input string and uses it as a seed to generate a 32-byte private key using the SHA3-256 cryptographic hash function. It returns the private key as an H256 data type, which is an array of 32 bytes.
+
+private_key_to_mnemonic(private_key: &H256) -> String: This function takes the private key generated in the previous function and converts it to a 12-word mnemonic phrase using the BIP39 standard and the English word dictionary. It returns the mnemonic phrase as a text string.
+
+generate_values(username: String, password: String, pin: String) -> (String, String): This is the function that is exposed as a Tauri command, which means it can be called from a Tauri application. It takes three text string arguments: username, password, and pin. These are concatenated and used as input to generate the private key and mnemonic phrase using the functions mentioned above. It returns the private key and mnemonic phrase as a tuple.
+
+zeroize(): This is a function from the zeroize library that is used to clear the memory of the input variable that contains the original input after it has been used to generate the private key. This is important to prevent leakage of confidential information in the computer's memory.
+
+Additionally, you can see a special compilation directive #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")] that indicates that the program should compile in release mode for Windows, which means that there will be no command console associated with the application.
+
 # Warnings
 
 The following are some important warnings that you should be aware of before modifying or using this code:
