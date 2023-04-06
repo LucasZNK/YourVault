@@ -10,7 +10,11 @@ https://user-images.githubusercontent.com/57494138/230270090-cbacc063-6dc3-43af-
 
 To run this application locally, first, clone this repository:
 
-Then, navigate to the project's directory and install the dependencies:
+Then, navigate to the project's directory and install the dependencies: You are going to need some extra tools for rust.
+
+Complete pre-requisites from tauri
+
+`https://tauri.app/v1/guides/getting-started/prerequisites`
 
 ```
 cd yourvault
