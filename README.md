@@ -32,6 +32,12 @@ Pin: 1234
 
 This combination will create a unique key that you only need to remember.
 
+## Protecting Your Funds: Why We Choose Not to Distribute Executables for Our Desktop App
+
+I choose not to distribute a executable for our desktop app because my goal is for you to have control and full transparency over the software installed on your computer, especially when it comes to handling your funds. The idea is for you to build and install the app on your computer like any other program, but with the added benefit of being able to review the code beforehand and build it yourself. This process allows you to ensure that there is nothing suspicious or malicious in the code, providing an extra layer of security for your funds.
+
+Furthermore, it's important to note that the desktop app does not require an internet connection to function properly. This means that you can use it offline without any issues. I believe that by providing a completely offline solution, can offer a higher level of security for your funds, as there is no risk of your private information or keys being transmitted over the internet. This is just one more way in which this app is designed to prioritize your security and peace of mind.
+
 # How this create secure keys?
 
 This is a small Rust program that uses some third-party packages to generate a private key and its corresponding mnemonic phrase from a given input. The following functions and algorithms are used:
@@ -44,14 +50,6 @@ generate_values(username: String, password: String, pin: String) -> (String, Str
 
 zeroize(): This is a function from the zeroize library that is used to clear the memory of the input variable that contains the original input after it has been used to generate the private key. This is important to prevent leakage of confidential information in the computer's memory.
 
-Additionally, you can see a special compilation directive #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")] that indicates that the program should compile in release mode for Windows, which means that there will be no command console associated with the application.
-
-## Protecting Your Funds: Why We Choose Not to Distribute Complicated Executables for Our Desktop App
-
-We choose not to distribute a executable for our desktop app because our goal is for you to have control and full transparency over the software installed on your computer, especially when it comes to handling your funds. The idea is for you to build and install the app on your computer like any other program, but with the added benefit of being able to review the code beforehand and build it yourself. This process allows you to ensure that there is nothing suspicious or malicious in the code, providing an extra layer of security for your funds.
-
-Furthermore, it's important to note that our desktop app does not require an internet connection to function properly. This means that you can use it offline without any issues. We believe that by providing a completely offline solution, we can offer a higher level of security for your funds, as there is no risk of your private information or keys being transmitted over the internet. This is just one more way in which our app is designed to prioritize your security and peace of mind.
-
 # Warnings [ READ PLEASE ]
 
 The following are some important warnings that you should be aware of before modifying or using this code:
@@ -63,6 +61,14 @@ Before sending a large amount of money, make sure to do some testing. Generate y
 Don't lose your access credentials. If you forget your login credentials and don't have your private key backed up, there is no way to recover your funds. Be sure to keep your login information safe and secure.
 
 Modify at your own risk: This code generates a private key and a mnemonic phrase based on a username, password, and a PIN. Modifying any part of this code may affect the generation process, and result in loss of access to your funds. It is recommended that you do not modify this code unless you fully understand its implications.
+
+## You are responsable for your funds
+
+- Never reveal your login credentials.
+- Never share your private key or mnemonic phrase. Nobody should ever ask you for this information, and if they do, it's likely a scam.
+- Be cautious if someone gains access to your computer. While our app takes measures to clean up memory, it's not possible to keep anything - Secure on a compromised computer.
+- Before sending a large amount of money, make sure to do some testing. Generate your key, delete everything, and then try entering the same information again to ensure that it generates the same key every time.
+- Don't lose your access credentials. If you forget your login credentials and don't have your private key backed up, there is no way to recover your funds. Be sure to keep your login information safe and secure.
 
 ## Getting Started
 
