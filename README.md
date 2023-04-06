@@ -30,7 +30,7 @@ Pin: 1234
 
 This combination will create a unique key that you only need to remember.
 
-## Protecting Your Funds: Why We Choose Not to Distribute Executables for Our Desktop App
+## Protecting Your Funds: Why I Choose Not to Distribute Executables for Our Desktop App
 
 I choose not to distribute a executable for our desktop app because my goal is for you to have control and full transparency over the software installed on your computer, especially when it comes to handling your funds. The idea is for you to build and install the app on your computer like any other program, but with the added benefit of being able to review the code beforehand and build it yourself. This process allows you to ensure that there is nothing suspicious or malicious in the code, providing an extra layer of security for your funds.
 
