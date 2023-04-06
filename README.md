@@ -4,6 +4,11 @@ This is a web application built with With Tauri, React + Rust that allows users 
 
 **Only use the app on a device you trust and consider secure, is your responsability to keep the environment secure before manipulating sensitive info**
 
+
+Working on compatibility, here is the CLI version
+
+https://github.com/LucasZNK/cli-yourvault
+
 https://user-images.githubusercontent.com/57494138/230471715-758f823d-659c-4589-b07a-134db11f1f19.mp4
 
 ## Motivation:
