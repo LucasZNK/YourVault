@@ -58,7 +58,3 @@ Contributions to this project are welcome. To get started, please refer to the c
 
 License
 This project is licensed under the MIT license. See LICENSE for more information.
-
-```
-
-```
