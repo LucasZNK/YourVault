@@ -26,7 +26,7 @@ npm tauri dev
 
 [README IN PROGRESS, NEED TO ADD MORE STEPS]
 
-Motivation:
+# Motivation:
 
 The goal of creating this application is to allow users to generate deterministic private keys and mnemonic phrases using a combination of their username, password, and a PIN. This offers a secure and easy-to-remember way to store and access their private keys across different blockchain networks such as Ethereum, Matic, Binance Smart Chain, and others, without the need to physically or digitally store them.
 
