@@ -10,6 +10,23 @@ https://user-images.githubusercontent.com/57494138/230270090-cbacc063-6dc3-43af-
 
 We choose not to distribute a complicated executable for our desktop app because our goal is for you to have control and full transparency over the software installed on your computer, especially when it comes to handling your funds. The idea is for you to build and install the app on your computer like any other program, but with the added benefit of being able to review the code beforehand and build it yourself. This process allows you to ensure that there is nothing suspicious or malicious in the code, providing an extra layer of security for your funds.
 
+Furthermore, it's important to note that our desktop app does not require an internet connection to function properly. This means that you can use it offline without any issues. We believe that by providing a completely offline solution, we can offer a higher level of security for your funds, as there is no risk of your private information or keys being transmitted over the internet. This is just one more way in which our app is designed to prioritize your security and peace of mind.
+
+## How to use the app
+
+To use the app, simply enter the username of your choice, along with a password and a pin. This combination will create a unique and irreproducible key that will always remain the same whenever you enter the same three inputs. This means that you don't have to worry about storing a key with multiple words on a piece of paper or in a digital document. Instead, you can simply make a note of or remember these three pieces of information.
+
+It's worth noting that you can uninstall this app or install it on any device of your choice. As long as you enter the same three values (username, password, and pin), you'll always get the same private key to access your wallet. This means that you can build and install the app on multiple devices without worrying about losing access to your funds, as long as you remember your username, password, and pin combination.
+
+For example:
+
+Username: nftwallet
+
+Password: moon
+Pin: 1234
+
+This combination will create a unique key that you only need to remember.
+
 ## Getting Started
 
 To run this application locally, first, clone this repository:
@@ -71,20 +88,13 @@ Additionally, you can see a special compilation directive #![cfg_attr(not(debug_
 
 The following are some important warnings that you should be aware of before modifying or using this code:
 
+Never reveal your login credentials.
+Never share your private key or mnemonic phrase. Nobody should ever ask you for this information, and if they do, it's likely a scam.
+Be cautious if someone gains access to your computer. While our app takes measures to clean up memory, it's not possible to keep anything secure on a compromised computer.
+Before sending a large amount of money, make sure to do some testing. Generate your key, delete everything, and then try entering the same information again to ensure that it generates the same key every time.
+Don't lose your access credentials. If you forget your login credentials and don't have your private key backed up, there is no way to recover your funds. Be sure to keep your login information safe and secure.
+
 Modify at your own risk: This code generates a private key and a mnemonic phrase based on a username, password, and a PIN. Modifying any part of this code may affect the generation process, and result in loss of access to your funds. It is recommended that you do not modify this code unless you fully understand its implications.
-Not audited for security: This code has not been audited for security, and its use is at your own risk. It is recommended that you do not use this code with significant amounts of funds.
-
-Styles
-The styles for this app are a work in progress, and will be updated in the future.
-
-Dependencies
-This project uses the following dependencies:
-
-React
-Tauri
-@tauri-apps/api
-Contributing
-Contributions to this project are welcome. To get started, please refer to the contributing guidelines.
 
 License
 This project is licensed under the MIT license. See LICENSE for more information.
