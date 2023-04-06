@@ -2,9 +2,10 @@
 
 This is a web application built with With Tauri, React + Rust that allows users to generate a private key and a mnemonic phrase, based on a username, password, and a PIN. The app also includes a keyboard for users to input their PIN and change the positions of the numbers on each click to despiste loggers and a feature to copy the generated key and mnemonic to the clipboard.
 
-`UI IN PROGRESS `
 
-https://user-images.githubusercontent.com/57494138/230270090-cbacc063-6dc3-43af-9270-cd98abca5922.mov
+https://user-images.githubusercontent.com/57494138/230471715-758f823d-659c-4589-b07a-134db11f1f19.mp4
+
+
 
 # Motivation:
 
