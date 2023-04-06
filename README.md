@@ -20,14 +20,13 @@ However, it's crucial to keep in mind that anyone who obtains your username, pas
 
 ## How to use the app
 
-To use the app, simply enter the username of your choice, along with a password and a pin. This combination will create a unique and irreproducible key that will always remain the same whenever you enter the same three inputs. This means that you don't have to worry about storing a key with multiple words on a piece of paper or in a digital document. Instead, you can simply make a note of or remember these three pieces of information.
+To use the application, simply enter the username of your choice, along with a password and a pin. This combination will create a unique and irreproducible key that will always be the same when you enter the same three values. This means that you won't have to worry about carrying a key with multiple words on a paper or digital document. Instead, you can store your generated private keys in a safe place and not move them from there. But with the advantage that if you ever need the funds that are there, or for example your house catches fire, you can regenerate these keys as long as you remember your username, password, and the original pin you used.
 
-It's worth noting that you can uninstall this app or install it on any device of your choice. As long as you enter the same three values (username, password, and pin), you'll always get the same private key to access your wallet. This means that you can build and install the app on multiple devices without worrying about losing access to your funds, as long as you remember your username, password, and pin combination.
+It's important to note that you can uninstall the application or install it on any device of your choice. As long as you enter the same three values (username, password, and pin), you will get the same private key to access your wallet. This means you can build and install the application on multiple devices without worrying about losing access to your funds, as long as you remember your combination of username, password, and pin.
 
 For example:
 
-Username: nftwallet
-
+username: mywallet
 Password: moon
 Pin: 1234
 
