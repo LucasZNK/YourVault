@@ -4,7 +4,7 @@ This is a web application built with With Tauri, React + Rust that allows users 
 
 https://user-images.githubusercontent.com/57494138/230471715-758f823d-659c-4589-b07a-134db11f1f19.mp4
 
-# Motivation:
+## Motivation:
 
 The goal of creating this application is to allow users to generate deterministic private keys and mnemonic phrases using a combination of their username, password, and a PIN. This offers a secure and easy-to-remember way to store and access their private keys across different blockchain networks such as Ethereum, Matic, Binance Smart Chain, and others, without the need to physically or digitally store them.
 
